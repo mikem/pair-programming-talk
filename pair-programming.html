@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+    <meta name="generator" content="Organic" />
+    <meta name="author" content="Mike Mazur" />
+    <meta name="date" content="2012-05-05" />
+    <meta name="venue" content="BarCamp Calgary" />
+
+    <title>Pair Programming</title>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.history.js"></script>
+    <script type="text/javascript" src="slippy.js"></script>
+    <!-- Slippy structural styles -->
+    <link type="text/css" rel="stylesheet" href="slippy.css"/>
+    <!-- Slippy theme -->
+    <link type="text/css" rel="stylesheet" href="slippy-pure.css"/>
+    <!-- Slippy init code -->
+    <script type="text/javascript">
+      $(function() {
+        $(".slide").slippy({
+          // settings go here
+          // possible values are:
+          //  - animLen, duration for default animations (0 = disabled)
+          //  - animInForward, receives a slide and animates it
+          //  - animInRewind, receives a slide and animates it
+          //  - animOutForward, receives a slide and animates it
+          //  - animOutRewind, receives a slide and animates it
+          //  - baseWidth, defines the base for img resizing, if you don't want only
+          //    full-width images, specify this as the pixel width of a slide so that
+          //    images are scaled properly (default is 620px wide)
+          //  - ratio, defines the width/height ratio of the slides, defaults to 1.3 (620x476)
+          //  - margin, the fraction of screen to use as slide margin, defaults to 0.15
+        });
+        SyntaxHighlighter.all();
+      });
+    </script>
+  </head>
+  <body>
+    <div class="slide">
+      <h1>Agenda</h1>
+      <ul>
+        <li>What is pairing?</li>
+        <li>What is my experience with pairing?</li>
+        <li>How do we pair? (Mechanics)</li>
+        <li>Why do we pair? (Pros)</li>
+        <li>Pitfalls, challenges (Cons)</li>
+        <li>Conclusions</li>
+        <li>Side Note: Interruptions and questions welcomed!</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h1>What is pairing?</h1>
+      <ul>
+        <li>Two people working on the same problem</li>
+        <li>One driver, one navigator</li>
+        <li>One low level (ie. Syntax), one high level (strategy, integration, ahead)</li>
+        <li>Who’s done pair programming before?</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h1>My experience</h1>
+      <ul>
+        <li>Pairing full time since June 2010 at Pivotal Labs</li>
+        <li>We pair on all production code</li>
+        <li>Complicated “tricky” code</li>
+        <li>Simple CSS fixes</li>
+        <li>Ops even</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h1>How (Mechanics)</h1>
+      <ul>
+        <li>2 keyboards, 2 mice, 24, 27 inch screen</li>
+        <li>Standard workstation image and tooling</li>
+        <li>Rotate pairs every day</li>
+        <li>No one has their own work station (email stations)</li>
+        <li>Remote pairing w/ skype, ichat</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h1>Why?</h1>
+      <ul>
+        <li>Knowledge sharing empowers each developer to contribute because knowledge & process spread</li>
+        <li>Quality code delivered faster & cheaper, for product owner to see results & iterate.</li>
+        <li>Great way to interview candidates</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h1>Empowered Team, Sustainable Project</h1>
+      <ul>
+        <li>Knowledge sharing (tech, design approaches & decisions)</li>
+        <ul>
+          <li>learn new tech, best practices, clean or clear code</li>
+          <li>through pair rotation</li>
+          <li>various components rotation (no silos)</li>
+          <li>mix skill set (DBA, frontend)</li>
+        </ul>
+        <li>teach them entire / whole process (TDD, CI, product ppl)</li>
+        <li>project history</li>
+        <li>Side note: Learn fast!</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h1>Code Quality, Less Bugs</h1>
+      <ul>
+        <li>Always two viewpoints, backgrounds, experiences</li>
+        <ul>
+          <li>Deeply immersed</li>
+        </ul>
+        <li>Constant code review (who does code review?)</li>
+        <li>Bugs are often caught as they’re introduced.</li>
+        <ul>
+          <li>tables, secure cookie, slightly better understanding (new vs create)</li>
+          <li>pressure</li>
+        </ul>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h1>Cost</h1>
+      <ul>
+        <li>Decrease impact of interruptions (huge!)</li>
+        <ul>
+          <li>both external & self-inflicted</li>
+          <li>one person handles interrupt, other stays focused</li>
+        </ul>
+        <li>Focus on business value, not interesting engineering problem to solve</li>
+        <li>Clearer understanding of requirements (having product on-site really helps)</li>
+        <li>Clear code, easier to maintain in the long run</li>
+        <li>Important issues thrashed out on the spot</li>
+        <li>Naming “what to call this exception”</li>
+        <ul>
+          <li>simplify</li>
+        </ul>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h1>Developer Skill</h1>
+      <ul>
+        <li>Communication, conveying difficult technical concepts</li>
+        <ul>
+          <li>develop another skill</li>
+          <li>people want to hire engineers who can communicate</li>
+        </ul>
+        <li>Programming tricks, editor short cuts, etc.</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h1>Challenges</h1>
+      <ul>
+        <li>Difficult to keep own hours or work from home</li>
+        <ul>
+          <li>tough for me</li>
+        </ul>
+        <li>Being focused 8 hours / day can be draining</li>
+        <ul>
+          <li>But is fun & fulfilling</li>
+        </ul>
+        <li>Research situations…</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h1>Difficult Pairs</h1>
+      <ul>
+        <li>Distracted people (ipad, phone, email)</li>
+        <ul>
+          <li>feels like you’re soloing</li>
+        </ul>
+        <li>No passion / heart is not in it</li>
+        <ul>
+          <li>the person makes no progress developing</li>
+          <li>minimal contribution</li>
+        </ul>
+        <li>Crowders</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h1>Summary</h1>
+      <ul>
+        <li>Pairing is awesome, highly recommended</li>
+        <li>Learning pace outstanding, I made huge progress</li>
+        <li>Can be addictive churning out high-quality product</li>
+        <li>We are hiring.</li>
+      </ul>
+    </div>
+
+    <div class="layout" data-name="default">
+      <content></content>
+      <div class="footer">
+        <!--span class="left">Jordi Boggiano</span>
+        <span class="right">Slippy on <a href="http://github.com/Seldaek/slippy/">github</a></span>
+        <span class="left">Blog <a href="http://seld.be/">seld.be</a></span>
+        <span class="right">Twitter <a href="http://twitter.com/seldaek">@seldaek</a></span>
+        <hr class="defloat" /-->
+      </div>
+    </div>
+  </body>
+</html>
