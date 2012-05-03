@@ -445,6 +445,8 @@
 
     updateSlideBackground = function() {
         var img;
+        $('#slippy-slide-background').remove();
+        $('body').removeClass('slide-background');
         if (img = slides.eq(curSlide).data('background')) {
             $('<div id="slippy-slide-background"></div>')
                 .prependTo('body')
@@ -454,9 +456,6 @@
                 .css('background-repeat', 'no-repeat')
                 .css('background-color', '#000')
             $('body').addClass('slide-background');
-        } else {
-            $('#slippy-slide-background').remove();
-            $('body').removeClass('slide-background');
         }
     };
 

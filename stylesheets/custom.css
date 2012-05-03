@@ -1,13 +1,10 @@
-.hcenter {
-  text-align: center;
-}
-
 #barcamp-logo {
+  margin-top: 2em;
   width: 300px;
 }
 
-table a {
-  display: block;
+.center-text {
+  text-align: center;
 }
 
 .note {
