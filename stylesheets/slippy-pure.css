@@ -12,9 +12,10 @@
 
 /** Core */
 body, html {
-    background: #eee;
+    background: #fff;
     color: #000;
     font-family: Tahoma,Verdana,sans-serif;
+    line-height: 1.2em;
 }
 
 body, html {
@@ -70,8 +71,10 @@ a.eval {
 
 h1, h2, h3, h4 {
     margin: 0 0 .5em;
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 3em;
+    line-height: 1em;
+    /* font-weight: bold; */
+    font-family: Helvetica,Arial,sans-serif;
 }
 
 h1 {
@@ -85,7 +88,7 @@ h1 {
 
 h2 {
     margin-bottom: .25em;
-    font-size: 1.4em;
+    font-size: 2em;
 }
 
 h3 {
@@ -105,6 +108,7 @@ em {
 
 li {
     font-size: 1.2em;
+    line-height: 1.7em;
 }
 
 li li {
@@ -116,12 +120,16 @@ p {
 }
 
 ol, ul {
-    list-style: disc outside none;
+    list-style: square outside none;
     margin-left: 2em;
 }
 
 ol {
     list-style-type: decimal;
+}
+
+ul ul, ul ol, ol ul, ol ol {
+    list-style: circle outside none;
 }
 
 /** References links */

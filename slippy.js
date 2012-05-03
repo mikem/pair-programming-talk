@@ -439,7 +439,7 @@
         $('body').removeClass('slide-'+(curSlide+1)).addClass('slide-'+(num+1));
         curSlide = num;
         slides.eq(curSlide).addClass('active');
-        $('.slideDisplay').text((num+1)+'/'+slides.length);
+        $('.slideDisplay').text((num+1));//+'/'+slides.length);
         updateSlideBackground();
     };
 

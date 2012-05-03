@@ -1,0 +1,17 @@
+.hcenter {
+  text-align: center;
+}
+
+#barcamp-logo {
+  width: 300px;
+}
+
+table a {
+  display: block;
+}
+
+.note {
+  /* display: none; */
+  color: #bfbfbf;
+  font-style: italic;
+}

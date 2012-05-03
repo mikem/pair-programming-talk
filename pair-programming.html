@@ -14,9 +14,11 @@
     <script type="text/javascript" src="jquery.history.js"></script>
     <script type="text/javascript" src="slippy.js"></script>
     <!-- Slippy structural styles -->
-    <link type="text/css" rel="stylesheet" href="slippy.css"/>
+    <link type="text/css" rel="stylesheet" href="stylesheets/slippy.css"/>
     <!-- Slippy theme -->
-    <link type="text/css" rel="stylesheet" href="slippy-pure.css"/>
+    <link type="text/css" rel="stylesheet" href="stylesheets/slippy-pure.css"/>
+    <!-- More styles -->
+    <link type="text/css" rel="stylesheet" href="stylesheets/custom.css" />
     <!-- Slippy init code -->
     <script type="text/javascript">
       $(function() {
@@ -40,47 +42,67 @@
   </head>
   <body>
     <div class="slide">
+      <h1>I Pair Program Every Day</h1>
+      <h2 class="hcenter">And Want To Tell You All About It</h2>
+      <section class="vcenter">
+        <table>
+          <tr>
+            <td>
+              <a href="http://startupcalgary.ca/events/barcamp/"><img id="barcamp-logo" src="img/BarCamp-Logo2.png" /></a>
+            </td>
+            <td>
+              Mike Mazur<br />
+              Saturday, May 5, 2012
+            </td>
+          </tr>
+        </table>
+      </section>
+    </div>
+
+    <div class="slide">
       <h1>Agenda</h1>
       <ul>
         <li>What is pairing?</li>
         <li>What is my experience with pairing?</li>
         <li>How do we pair? (Mechanics)</li>
         <li>Why do we pair? (Pros)</li>
-        <li>Pitfalls, challenges (Cons)</li>
+        <li>Pitfalls & challenges (Cons)</li>
         <li>Conclusions</li>
-        <li>Side Note: Interruptions and questions welcomed!</li>
+        <li><em>Side note:</em> Interruptions and questions welcome!</li>
       </ul>
     </div>
 
     <div class="slide">
-      <h1>What is pairing?</h1>
+      <h1>What is Pairing?</h1>
       <ul>
         <li>Two people working on the same problem</li>
         <li>One driver, one navigator</li>
-        <li>One low level (ie. Syntax), one high level (strategy, integration, ahead)</li>
-        <li>Who’s done pair programming before?</li>
+        <li>One low level (i.e.: syntax), one high level (strategy, integration, thinking ahead)</li>
+        <li class="note">Who’s done pair programming before?</li>
       </ul>
     </div>
 
     <div class="slide">
-      <h1>My experience</h1>
+      <h1>My Experience</h1>
       <ul>
-        <li>Pairing full time since June 2010 at Pivotal Labs</li>
-        <li>We pair on all production code</li>
-        <li>Complicated “tricky” code</li>
+        <li>Pairing full time since July 2010 at Pivotal Labs/New Context</li>
+        <li>We pair on <strong>all production code</strong></li>
+        <li>Complicated "tricky" code</li>
         <li>Simple CSS fixes</li>
         <li>Ops even</li>
       </ul>
     </div>
 
     <div class="slide">
-      <h1>How (Mechanics)</h1>
+      <h1>How Does it Actually Work?</h1>
       <ul>
-        <li>2 keyboards, 2 mice, 24, 27 inch screen</li>
+        <li>2 keyboards, 2 mice, 27" & 24" screens</li>
         <li>Standard workstation image and tooling</li>
         <li>Rotate pairs every day</li>
-        <li>No one has their own work station (email stations)</li>
-        <li>Remote pairing w/ skype, ichat</li>
+        <li>No one has their own workstation</li>
+        <li class="note">Everyone can and does use pretty much any machine</li>
+        <li class="note">Email stations available for personal tasks</li>
+        <li>Remote pairing with Skype, iChat</li>
       </ul>
     </div>
 
@@ -88,8 +110,8 @@
       <h1>Why?</h1>
       <ul>
         <li>Knowledge sharing empowers each developer to contribute because knowledge & process spread</li>
-        <li>Quality code delivered faster & cheaper, for product owner to see results & iterate.</li>
-        <li>Great way to interview candidates</li>
+        <li>Quality code delivered faster & cheaper, for product owner to see results & iterate</li>
+        <li><em>Bonus:</em> Great way to interview candidates</li>
       </ul>
     </div>
 
@@ -98,14 +120,14 @@
       <ul>
         <li>Knowledge sharing (tech, design approaches & decisions)</li>
         <ul>
-          <li>learn new tech, best practices, clean or clear code</li>
+          <li>learn new tech, best practices, readable code</li>
           <li>through pair rotation</li>
           <li>various components rotation (no silos)</li>
           <li>mix skill set (DBA, frontend)</li>
         </ul>
-        <li>teach them entire / whole process (TDD, CI, product ppl)</li>
-        <li>project history</li>
-        <li>Side note: Learn fast!</li>
+        <li>Teach them entire / whole process (TDD, CI, product ppl)</li>
+        <li>Project history</li>
+        <li><em>Learn fast!</em></li>
       </ul>
     </div>
 
@@ -114,19 +136,20 @@
       <ul>
         <li>Always two viewpoints, backgrounds, experiences</li>
         <ul>
-          <li>Deeply immersed</li>
+          <li>deeply immersed</li>
         </ul>
-        <li>Constant code review (who does code review?)</li>
-        <li>Bugs are often caught as they’re introduced.</li>
+        <li class="note">Who does code review?</li>
+        <li>Constant code review</li>
+        <li>Bugs are often caught as they’re introduced</li>
         <ul>
-          <li>tables, secure cookie, slightly better understanding (new vs create)</li>
+          <li>tables, secure cookie, slightly better understanding (new vs. create)</li>
           <li>pressure</li>
         </ul>
       </ul>
     </div>
 
     <div class="slide">
-      <h1>Cost</h1>
+      <h1>Cost Savings</h1>
       <ul>
         <li>Decrease impact of interruptions (huge!)</li>
         <ul>
@@ -137,14 +160,15 @@
         <li>Clearer understanding of requirements (having product on-site really helps)</li>
         <li>Clear code, easier to maintain in the long run</li>
         <li>Important issues thrashed out on the spot</li>
-        <li>Naming “what to call this exception”</li>
+        <li>Naming</li>
         <ul>
-          <li>simplify</li>
+          <li>"What should we call this exception?"</li>
+          <li>clarity, simplicity</li>
         </ul>
       </ul>
     </div>
 
-    <div class="slide">
+    <!--div class="slide">
       <h1>Developer Skill</h1>
       <ul>
         <li>Communication, conveying difficult technical concepts</li>
@@ -154,18 +178,19 @@
         </ul>
         <li>Programming tricks, editor short cuts, etc.</li>
       </ul>
-    </div>
+    </div-->
 
     <div class="slide">
       <h1>Challenges</h1>
       <ul>
         <li>Difficult to keep own hours or work from home</li>
         <ul>
-          <li>tough for me</li>
+          <li>an adjustment for me</li>
         </ul>
-        <li>Being focused 8 hours / day can be draining</li>
+        <li>Being focused 8 hours per day can be draining</li>
         <ul>
-          <li>But is fun & fulfilling</li>
+          <li>but is fun & fulfilling</li>
+          <li>you get used to it</li>
         </ul>
         <li>Research situations…</li>
       </ul>
