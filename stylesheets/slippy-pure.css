@@ -106,7 +106,7 @@ em {
     color: #ca0207;
 }
 
-li {
+p, li {
     font-size: 1.3em;
     line-height: 1.7em;
 }
