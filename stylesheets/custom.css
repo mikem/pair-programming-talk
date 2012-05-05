@@ -7,6 +7,17 @@
   text-align: center;
 }
 
+.image-attribution {
+  font-size: 0.65em;
+  background-color: #eee;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  line-height: 100%;
+  opacity: 0.4;
+}
+
 .note {
   /* display: none; */
   color: #bfbfbf;
