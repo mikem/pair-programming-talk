@@ -19,7 +19,7 @@
 }
 
 .note {
-  /* display: none; */
+  display: none;
   color: #bfbfbf;
   font-style: italic;
 }
